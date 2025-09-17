@@ -8,11 +8,13 @@ Este repositório contém duas simulações feitas em Java que demonstram concei
 
 ### Descrição
 
-Quatro cavaleiros caminham simultaneamente por um corredor de 2 km. Cada cavaleiro anda inicialmente entre 2 a 4 metros a cada 50 ms. No corredor:
-
-- A 500 metros há uma única tocha. O cavaleiro que pegar a tocha aumenta sua velocidade em +2 metros por 50 ms.
-- A 1,5 km há uma pedra brilhante. O cavaleiro que pegar a pedra (e que não tenha a tocha) aumenta sua velocidade em +2 metros por 50 ms.
-- Ao final dos 2 km, os cavaleiros encontram 4 portas. Cada cavaleiro escolhe uma porta aleatória (sem repetição). Apenas uma porta leva à saída; as outras três têm monstros que devoram os cavaleiros.
+4 cavaleiros caminham por um corredor, simultaneamente, de 2 a 4 m por 50 ms. O corredor é
+escuro, tem 2 km e em 500 m, há uma única tocha. O cavaleiro que pegar a tocha, aumenta sua
+velocidade, somando mais 2 m por 50 ms ao valor que já fazia. Em 1,5 km, existe uma pedra
+brilhante. O cavaleiro que pegar a pedra, aumenta sua velocidade, somando mais 2 m por 50 ms
+ao valor que já fazia (O cavaleiro que já detém a tocha não poderá pegar a pedra). Ao final dos 2
+km, os cavaleiros se deparam com 4 portas e, um por vez pega uma porta aleatória (que não pode
+repetir) e entra nela. Apenas uma porta leva à saída. As outras 3 tem monstros que os devoram.
 
 ### Como funciona a simulação
 
@@ -27,18 +29,13 @@ Quatro cavaleiros caminham simultaneamente por um corredor de 2 km. Cada cavalei
 
 ### Descrição
 
-Simulação de um aeroporto que possui duas pistas (norte e sul). O processo de decolagem envolve 4 fases:
-
-- Manobra: dura entre 300 e 700 ms.
-- Taxiar: dura entre 500 e 1000 ms.
-- Decolagem: dura entre 600 e 800 ms.
-- Afastamento da área: dura entre 300 e 800 ms.
-
-Regras do aeroporto:
-
-- Cada pista permite a decolagem de apenas um avião por vez.
-- Apenas 2 aviões podem circular na área de decolagem simultaneamente.
-- Por ciclo, 12 aviões são simulados e cada um escolhe aleatoriamente entre a pista norte ou sul para decolar.
+Um aeroporto tem 2 pistas (norte e sul) e, em cada pista, apenas um avião pode fazer a decolagem.
+O procedimento de decolagem tem 4 fases (taxiar, decolagem e afastamento da área). A fase de
+manobra pode durar de 300 a 700 milissegundos A fase de taxiar, de 500 a 1000 milissegundos. A
+fase de decolagem, de 600 a 800 milissegundos. A fase de afastamento, de 300 a 800 milissegundos.
+O aeroporto reúne, por ciclo, 12 aeronaves que podem decolar pela pista norte ou pela pista sul
+(decisão aleatória) mas, apenas 2 aviões podem circular pela área de decolagem ao mesmo tempo.
+Fazer uma aplicação em Java que resolva o problema.
 
 ### Como funciona a simulação
 
